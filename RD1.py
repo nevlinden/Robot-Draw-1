@@ -20,4 +20,14 @@ def someShapes():
     backward(1,2)
     triangleDraw()
 
-someShapes()
+def anyShape(y):
+    penDown()
+    for x in range (0,y):
+        forward(2,1.5)
+        turnBy(360/y)
+    penUp()
+
+sideNum = raw_input("How many sides would you like?")   
+sideNum = int(sideNum)
+anyShape(sideNum)
+    
